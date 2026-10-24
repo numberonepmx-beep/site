@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlet Her Zaman 18 Yaşındadır</title>
+    
+    <!-- Google Fonts: GTA SA Pricedown tarzına en yakın agresif/kalın font (Palanquin Dark / Impact) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@800&family=Rubik+Glitch&display=swap" rel="stylesheet">
+
+    <!-- Google ve Arama Sonuçları Görünürlük Ayarları -->
+    <meta name="description" content="Devlet Her Zaman 18 Yaşındadır.">
+    <link rel="icon" href="logo.png" type="image/png">
+
+    <style>
+        /* GTA SA Pricedown Font Yükleme (Fontsquirrel CDN) */
+        @font-face {
+            font-family: 'Pricedown';
+            src: url('https://db.onlinewebfonts.com/t/0088cb39d2c5ec6e5b497424d8641a08.eot');
+            src: url('https://db.onlinewebfonts.com/t/0088cb39d2c5ec6e5b497424d8641a08.eot?#iefix') format('embedded-opentype'),
+                 url('https://db.onlinewebfonts.com/t/0088cb39d2c5ec6e5b497424d8641a08.woff2') format('woff2'),
+                 url('https://db.onlinewebfonts.com/t/0088cb39d2c5ec6e5b497424d8641a08.woff') format('woff'),
+                 url('https://db.onlinewebfonts.com/t/0088cb39d2c5ec6e5b497424d8641a08.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: 'Pricedown', 'Impact', 'Palanquin Dark', sans-serif;
+            user-select: none;
+        }
+
+        .text-container {
+            opacity: 0;
+            text-align: center;
+            padding: 0 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            
+            /* 5 Saniye Bekleme ve Belirme Efekti */
+            animation: fadeInText 2.5s ease-in forwards;
+            animation-delay: 5s; /* İlk 5 saniye simsiyah kalır */
+        }
+
+        h1 {
+            font-size: clamp(2rem, 6vw, 4.5rem); /* Mobilde küçülür, masaüstünde büyür */
+            color: #ffffff;
+            text-shadow: 
+                0 0 5px rgba(255, 255, 255, 0.6),
+                0 0 12px rgba(180, 0, 0, 0.4),
+                2px 2px 4px rgba(0, 0, 0, 0.9);
+            animation: subtleGlow 4s infinite alternate ease-in-out;
+            animation-delay: 7.5s; /* Yazı tamamen geldikten sonra parlamaya başlar */
+            line-height: 1.2;
+            -webkit-text-stroke: 1px #000; /* GTA font hatlarını belirginleştirmek için siyah kontür */
+        }
+
+        /* 5 Saniye Sonra Belirme Animasyonu */
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+                transform: scale(0.96);
+                filter: blur(8px);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+                filter: blur(0px);
+            }
+        }
+
+        /* Hafif Kırmızı/Beyaz Soft Glow Efekti */
+        @keyframes subtleGlow {
+            0% {
+                text-shadow: 
+                    0 0 4px rgba(255, 255, 255, 0.5),
+                    0 0 10px rgba(150, 0, 0, 0.3),
+                    2px 2px 4px rgba(0, 0, 0, 0.9);
+            }
+            100% {
+                text-shadow: 
+                    0 0 8px rgba(255, 255, 255, 0.8),
+                    0 0 18px rgba(220, 20, 20, 0.5),
+                    2px 2px 4px rgba(0, 0, 0, 0.9);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="text-container">
+        <h1>Devlet Her Zaman 18 Yaşındadır</h1>
+    </div>
+
+</body>
+</html>
